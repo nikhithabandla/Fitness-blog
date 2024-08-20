@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #e0f7fa;
+            color: #333;
+            padding: 20px;
+            background-image: url('https://www.wellnessliving.com/blog/wp-content/uploads/2021/01/fitness-blog-1024x680.jpg');
+            background-size: cover;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #00796b;
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            max-height: 50px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        /* Main Content */
+        main {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        main article {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        main article h2 {
+            margin-bottom: 10px;
+            font-size: 2rem;
+            color: #004d40;
+        }
+
+        main article .meta {
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        main article img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        main article p {
+            margin-bottom: 15px;
+        }
+
+        main article .read-more {
+            display: inline-block;
+            background-color: #004d40;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        main article .read-more:hover {
+            background-color: #00251a;
+        }
+
+        /* Sidebar */
+        aside {
+            flex: 1;
+        }
+
+        aside section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        aside section h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #00796b;
+        }
+
+        aside section ul {
+            list-style: none;
+        }
+
+        aside section ul li {
+            margin-bottom: 10px;
+        }
+
+        aside section ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        aside section ul li a:hover {
+            color: #004d40;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #00796b;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            main {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            aside {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.shutterstock.com/image-vector/fitness-blog-logo-template-260nw-1882495246.jpg" alt="Logo">
+        <h1>Fitness for Life!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Workout Routines</a></li>
+                <li><a href="#">Nutrition</a></li>
+                <li><a href="#">Health Tips</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <article id="default">
+                <h2>Top Workout Routines</h2>
+                <p class="meta">By Nikhitha | August 18, 2024</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqEyFHvuFMAc-knprFmaQcUBLgB4bTxJwL9Q&s" alt="Workout Image">
+                <p>"Get the most out of your workout with our curated routines designed to maximize gains and boost fitness. From strength training to cardio, our expert tips will help you achieve your fitness goals and stay motivated."</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article id="post1">
+                <h2>Healthy Eating Tips</h2>
+                <p class="meta">By Nikhitha | August 16, 2024</p>
+                <img src="https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5008.jpg" alt="Healthy Eating">
+                <p>"Discover practical tips for maintaining a balanced diet and making healthier food choices. Our nutrition guides provide insights into meal planning, calorie control, and how to fuel your body effectively for optimal performance."</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article id="post2">
+                <h2>Fitness Trends to Watch</h2>
+                <p class="meta">By Nikhitha | August 17, 2024</p>
+                <img src="https://t3.ftcdn.net/jpg/04/29/35/62/360_F_429356296_CVQ5LkC6Pl55kUNLqLisVKgTw9vjyif1.jpg" alt="Fitness Trends">
+                <p>"Stay ahead of the curve with the latest fitness trends and innovations. From new exercise technologies to trending workout styles, we cover the most exciting developments in the world of fitness."</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article id="post3">
+                <h2>Stress Management Techniques</h2>
+                <p class="meta">By Nikhitha | August 18, 2024</p>
+                <img src="https://images.pexels.com/photos/416778/pexels-photo-416778.jpeg?cs=srgb&dl=pexels-pixabay-416778.jpg&fm=jpg" alt="Stress Management">
+                <p>"Explore effective strategies for managing stress and improving mental well-being. Our guides offer practical advice on relaxation techniques, mindfulness practices, and how to integrate stress relief into your daily routine."</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+        </main>
+
+        <aside>
+            <section>
+                <h3>Popular Topics</h3>
+                <ul>
+                    <li><a href="#post1">Healthy Eating</a></li>
+                    <li><a href="#post2">Fitness Trends</a></li>
+                    <li><a href="#post3">Stress Management</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Workout Routines</a></li>
+                    <li><a href="#">Nutrition</a></li>
+                    <li><a href="#">Health Tips</a></li>
+                    <li><a href="#">Mindfulness</a></li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+    <footer>
+        <p>Contact us at: nikhithabandla28@gmail.com</p>
+        <p>Follow us on
+            <a href="#">Twitter</a>,
+            <a href="#">Facebook</a>,
+            <a href="#">Instagram</a>
+        </p>
+        <p>&copy; 2024 Fitness Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+   
